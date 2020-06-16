@@ -4,7 +4,16 @@ var player2Name = "Player 2" ;
 //-----------------------PLAYER NAME CHANGER----------------------------------------------
 function editName(){
   player1Name = prompt("Enter Player 1 Name:");
+  if(player1Name === ""){
+    alert("No Name Entered.");
+    editName();
+  }
   player2Name = prompt("Enter Player 2 Name:");
+  if(player2Name === ""){
+    alert("No Name Entered.");
+    editName();
+  }
+
  document.getElementById("player1").innerHTML= player1Name;
  document.getElementById("player2").innerHTML= player2Name;
 }
