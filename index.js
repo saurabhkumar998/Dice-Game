@@ -3,19 +3,31 @@ var player2Name = "Player 2" ;
 
 //-----------------------PLAYER NAME CHANGER----------------------------------------------
 function editName(){
+
   player1Name = prompt("Enter Player 1 Name:");
+
   if(player1Name === ""){
     alert("No Name Entered.");
-    editName();
+    player1Name = prompt("Enter Player 1 Name:");
+    document.getElementById("player1").innerHTML= player1Name;
   }
-  player2Name = prompt("Enter Player 2 Name:");
-  if(player2Name === ""){
-    alert("No Name Entered.");
-    editName();
+  else{
+    document.getElementById("player1").innerHTML= player1Name;
   }
 
- document.getElementById("player1").innerHTML= player1Name;
- document.getElementById("player2").innerHTML= player2Name;
+  player2Name = prompt("Enter Player 2 Name:");
+
+  if(player2Name === ""){
+    alert("No Name Entered.");
+    player2Name = prompt("Enter Player 2 Name:");
+    document.getElementById("player2").innerHTML= player2Name;
+
+  }
+  else{
+    document.getElementById("player2").innerHTML= player2Name;
+  }
+
+
 }
 
 function dice(){
