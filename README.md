@@ -1,4 +1,4 @@
-# Dice-Game
+# Dice-Game       https://saurabhkumar998.github.io/Dice-Game/
 
 ![](preview1.png)
 
